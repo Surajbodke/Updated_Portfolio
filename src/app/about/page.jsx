@@ -29,17 +29,22 @@ const AboutPage = () => {
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">ABOUT ME</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+              As a MERN stack developer, I specialize in crafting robust and
+              scalable solutions. My expertise ensures efficient applications
+              that enhance the digital realm. With a strong foundation in
+              full-stack development and the precision of C++, I deliver
+              optimized projects that meet the demands of today's fast-paced
+              digital landscape. My work, from intuitive front-end designs to
+              seamless back-end integrations, reflects a dedication to
+              excellence and innovation.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Web development is the craft of building the digital world, one
+              line of code at a time.
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
