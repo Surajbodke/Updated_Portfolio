@@ -8,7 +8,7 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Real Estate App ",
+    title: "FindYourHome",
     desc: "Feb 2024 – Mar 2024\n• Developed a user-friendly and responsive frontend for a real estate app using React.\n• Integrated Google Maps API to enable location-based property search with real-time updates.\n• Built a real-time chat feature using Socket.io for seamless communication between users and agents.",
     img: "/RealEstate.png",
     link: "https://www.loom.com/share/bc8dc42e83164022aebd9a6cd0e61651?sid=04a24412-2f60-486a-a8b9-40b6fa87aa84",
