@@ -17,37 +17,20 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const topVariants = {
-    closed: {
-      rotate: 0,
-    },
-    opened: {
-      rotate: 45,
-      backgroundColor: "rgb(255,255,255)",
-    },
+    closed: { rotate: 0 },
+    opened: { rotate: 45, backgroundColor: "rgb(255,255,255)" },
   };
   const centerVariants = {
-    closed: {
-      rotate: 0,
-    },
-    opened: {
-      opacity: 0,
-      backgroundColor: "rgb(255,255,255)",
-    },
+    closed: { rotate: 0 },
+    opened: { opacity: 0, backgroundColor: "rgb(255,255,255)" },
   };
   const bottomVariants = {
-    closed: {
-      opacity: 1,
-    },
-    opened: {
-      rotate: -45,
-      backgroundColor: "rgb(255,255,255)",
-    },
+    closed: { opacity: 1 },
+    opened: { rotate: -45, backgroundColor: "rgb(255,255,255)" },
   };
 
   const listVariants = {
-    closed: {
-      x: "100vw",
-    },
+    closed: { x: "100vw" },
     opened: {
       x: 0,
       transition: {
@@ -59,14 +42,8 @@ const Navbar = () => {
   };
 
   const listItemVariants = {
-    closed: {
-      x: -10,
-      opacity: 0,
-    },
-    opened: {
-      x: 0,
-      opacity: 1,
-    },
+    closed: { x: -10, opacity: 0 },
+    opened: { x: 0, opacity: 1 },
   };
 
   return (
@@ -83,8 +60,8 @@ const Navbar = () => {
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className=" mr-1 text-white">R3D</span>
-          <span className=" w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+          <span className="mr-1 text-white">R3D</span>
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
             F1Y
           </span>
         </Link>
@@ -92,16 +69,44 @@ const Navbar = () => {
       {/* SOCIALS */}
       <div className="hidden md:flex justify-center gap-4 w-1/3">
         <Link href="https://github.com/Surajbodke">
-          <Image src="/github.png" alt="" width={24} height={24} />
+          <Image
+            src="/github.png"
+            alt=""
+            width={24}
+            height={24}
+            unoptimized
+            priority
+          />
         </Link>
         <Link href="https://leetcode.com/u/surajbodke/">
-          <Image src="/leetcode.png" alt="" width={24} height={24} />
+          <Image
+            src="/leetcode.png"
+            alt=""
+            width={24}
+            height={24}
+            unoptimized
+            priority
+          />
         </Link>
         <Link href="https://www.instagram.com/_.suraj._.25/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+          <Image
+            src="/instagram.png"
+            alt=""
+            width={24}
+            height={24}
+            unoptimized
+            priority
+          />
         </Link>
         <Link href="https://www.linkedin.com/in/suraj-bodke">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+          <Image
+            src="/linkedin.png"
+            alt=""
+            width={24}
+            height={24}
+            unoptimized
+            priority
+          />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}

@@ -7,7 +7,6 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Say Hello";
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -40,9 +39,9 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row gap-6 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-4xl sm:text-6xl">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -61,26 +60,27 @@ const ContactPage = () => {
             😊
           </div>
         </div>
+
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-lg flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center p-4 sm:p-6 md:p-12 lg:p-24"
         >
           <span>Dear Suraj Bodke,</span>
           <textarea
-            rows={6}
+            rows={4}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
           <span>My mail address is:</span>
           <input
             name="user_email"
-            type="text"
+            type="email"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
           <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4 hover:text-black hover:bg-purple-400">
+          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-2 sm:p-3 lg:p-4 hover:text-black hover:bg-purple-400">
             Send
           </button>
           {success && (

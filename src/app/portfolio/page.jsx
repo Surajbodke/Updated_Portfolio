@@ -45,7 +45,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-5xl sm:text-8xl text-center">
           My Works
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -56,23 +56,25 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col justify-center items-center gap-6 text-white">
-                  <h1 className="text-lg font-bold md:text-xl lg:text-2xl xl:text-3xl break-words whitespace-normal max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl text-center">
+                <div className="flex flex-col justify-center items-center gap-4 sm:gap-6 text-white">
+                  <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-center break-words max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-72 h-48 md:w-80 md:h-56 lg:w-[400px] lg:h-[280px] xl:w-[500px] xl:h-[350px]">
+                  <div className="relative w-64 h-36 sm:w-72 sm:h-48 md:w-80 md:h-56 lg:w-[400px] lg:h-[280px] xl:w-[500px] xl:h-[350px]">
                     <Image
                       src={item.img}
                       alt="Image"
                       fill
                       style={{ objectFit: "cover" }}
+                      unoptimized
+                      priority
                     />
                   </div>
-                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-64 sm:w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-1 text-xs md:p-2 md:text-sm lg:p-4 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
+                    <button className="p-1 sm:p-2 md:p-4 text-xs sm:text-sm md:text-md bg-white text-gray-600 font-semibold m-4 rounded">
                       See Demo
                     </button>
                   </Link>
@@ -84,13 +86,13 @@ const PortfolioPage = () => {
       </div>
       {/* Adjusted height for "Are you Interested?" section */}
       <div className="w-screen h-screen flex flex-col gap-4 items-center justify-center text-center">
-        <h1 className="text-8xl">Are you Interested?</h1>
+        <h1 className="text-5xl sm:text-8xl">Are you Interested?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px]"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[500px] md:h-[500px]"
           >
             <defs>
               <path
@@ -99,14 +101,14 @@ const PortfolioPage = () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">
+              <textPath xlinkHref="#circlePath" className="text-sm sm:text-xl">
                 Front-end Dev and Back-end Dev.
               </textPath>
             </text>
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="w-12 h-12 sm:w-16 sm:h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
             Hire Me
           </Link>

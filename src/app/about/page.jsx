@@ -33,7 +33,7 @@ const AboutPage = () => {
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
               I’m Suraj Harishchandra Bodke, a passionate full-stack developer
-              pursuing my Bachelor's in Computer Engineering at Dr. D.Y. Patil
+              pursuing my Bachelor in Computer Engineering at Dr. D.Y. Patil
               Institute of Technology, Pune. With expertise in the MERN stack, I
               love building dynamic, user-friendly applications. As the Managing
               Director of the Google Developer Student Club, I’ve honed my
