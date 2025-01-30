@@ -8,26 +8,26 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Real Estate App",
-    desc: "Designed and implemented a responsive, intuitive user interface for a real estate application using React, featuring Google Maps integration for interactive property searches. Additionally, utilized Socket.io for real-time synchronization of changes and a chat feature, facilitating instant communication between users and agents, ensuring a seamless and engaging experience across all devices.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "",
+    title: "Real Estate App ",
+    desc: "Feb 2024 – Mar 2024\n• Developed a user-friendly and responsive frontend for a real estate app using React.\n• Integrated Google Maps API to enable location-based property search with real-time updates.\n• Built a real-time chat feature using Socket.io for seamless communication between users and agents.",
+    img: "/RealEstate.png",
+    link: "https://www.loom.com/share/bc8dc42e83164022aebd9a6cd0e61651?sid=04a24412-2f60-486a-a8b9-40b6fa87aa84",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "To-Do List",
-    desc: "This is a simple to-do list application using HTML, CSS, and JavaScript. It allows users to add and remove tasks, with data persisting through local storage. The design is clean and responsive, providing a straightforward user experience.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "",
+    title: "Swoley-fit ",
+    desc: "Aug 2024 – Sep 2024\n• Built with React and styled using Tailwind CSS, the app ensures a seamless user experience across various devices, adapting smoothly to different screen sizes.\n• Users can select workout preferences like body part focus and exercise solo or with friends for a tailored fitness experience.\n• Provides dynamic exercise suggestions to enhance user engagement and motivation in fitness routines.",
+    img: "/SwoleyFit.png",
+    link: "https://github.com/Surajbodke/swoley-fit",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Real-Time Collaborative Editor",
-    desc: "Developed a real-time collaborative editor using React and Socket.io for seamless, instantaneous code editing among multiple users. The application ensures a responsive and intuitive user experience.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "",
+    title: "Real-Time Collaborative Editor ",
+    desc: "May 2024 – Jun 2024\n• Developed a real-time collaborative code editor with React and Socket.io for seamless user interaction.\n• Supports multiple languages including Java, Python, JavaScript, and C++.\n• Enhances productivity with real-time collaboration between users.",
+    img: "/CodeEditor.png",
+    link: "https://github.com/Surajbodke/Code_Editor",
   },
 ];
 
@@ -57,17 +57,22 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col justify-center items-center gap-6 text-white">
-                  <h1 className="text-xl font-bold md:text-3xl lg:text-5xl xl:text-7xl break-words whitespace-normal max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl text-center">
+                  <h1 className="text-lg font-bold md:text-xl lg:text-2xl xl:text-3xl break-words whitespace-normal max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl text-center">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
+                  <div className="relative w-72 h-48 md:w-80 md:h-56 lg:w-[400px] lg:h-[280px] xl:w-[500px] xl:h-[350px]">
+                    <Image
+                      src={item.img}
+                      alt="Image"
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                    <button className="p-1 text-xs md:p-2 md:text-sm lg:p-4 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
                       See Demo
                     </button>
                   </Link>
@@ -77,14 +82,15 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      {/* Adjusted height for "Are you Interested?" section */}
+      <div className="w-screen h-screen flex flex-col gap-4 items-center justify-center text-center">
         <h1 className="text-8xl">Are you Interested?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px] "
+            className="w-64 h-64 md:w-[500px] md:h-[500px]"
           >
             <defs>
               <path

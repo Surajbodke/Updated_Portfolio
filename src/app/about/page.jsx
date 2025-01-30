@@ -32,14 +32,14 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">ABOUT ME</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              As a MERN stack developer, I specialize in crafting robust and
-              scalable solutions. My expertise ensures efficient applications
-              that enhance the digital realm. With a strong foundation in
-              full-stack development and the precision of C++, I deliver
-              optimized projects that meet the demands of today's fast-paced
-              digital landscape. My work, from intuitive front-end designs to
-              seamless back-end integrations, reflects a dedication to
-              excellence and innovation.
+              I’m Suraj Harishchandra Bodke, a passionate full-stack developer
+              pursuing my Bachelor's in Computer Engineering at Dr. D.Y. Patil
+              Institute of Technology, Pune. With expertise in the MERN stack, I
+              love building dynamic, user-friendly applications. As the Managing
+              Director of the Google Developer Student Club, I’ve honed my
+              leadership and mentoring skills. I’m always eager to solve complex
+              problems and collaborate on innovative solutions, and I’m open to
+              new opportunities in software development or backend development.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
@@ -106,12 +106,6 @@ const AboutPage = () => {
             >
               <div className="rounded p-2 text-sm bg-black text-white cursor-pointer hover:bg-white hover:text-black">
                 C++
-              </div>
-              <div className="rounded p-2 text-sm bg-black text-white cursor-pointer hover:bg-white hover:text-black">
-                C
-              </div>
-              <div className="rounded p-2 text-sm bg-black text-white cursor-pointer hover:bg-white hover:text-black">
-                Python
               </div>
               <div className="rounded p-2 text-sm bg-black text-white cursor-pointer hover:bg-white hover:text-black">
                 HTML
@@ -209,6 +203,47 @@ const AboutPage = () => {
               {/* LEFT */}
               <div className="w-1/3 ">
                 {/* PROJECT TITLE */}
+
+                <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Real-Time Collaborative Editor{" "}
+                </div>
+                {/* PROJECT DESC */}
+                <div className="p-3 text-sm italic">
+                  Built a real-time collaborative code editor with React and
+                  Socket.io in a group project, allowing multiple users to edit
+                  code together instantly.{" "}
+                </div>
+                {/* PROJECT DATE */}
+                <div className="p-3 text-red-400 text-sm font-semibold">
+                  SEP 2023 – OCT 2023{" "}
+                </div>
+              </div>
+              {/* CENTER */}
+              <div className="w-1/6 flex justify-center">
+                {/* LINE */}
+                <div className="w-1 h-full bg-gray-600 rounded relative">
+                  {/* LINE CIRCLE */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                </div>
+              </div>
+              {/* RIGHT */}
+              <div className="w-1/3 "></div>
+            </div>
+            {/* EXPERIENCE LIST ITEM */}
+            <div className="flex justify-between h-48">
+              {/* LEFT */}
+              <div className="w-1/3 "></div>
+              {/* CENTER */}
+              <div className="w-1/6 flex justify-center">
+                {/* LINE */}
+                <div className="w-1 h-full bg-gray-600 rounded relative">
+                  {/* LINE CIRCLE */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                </div>
+              </div>
+              {/* RIGHT */}
+              <div className="w-1/3 ">
+                {/* PROJECT TITLE */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                   Real Estate App{" "}
                 </div>
@@ -223,45 +258,6 @@ const AboutPage = () => {
                   Apr 2024 – May 2024{" "}
                 </div>
               </div>
-              {/* CENTER */}
-              <div className="w-1/6 flex justify-center">
-                {/* LINE */}
-                <div className="w-1 h-full bg-gray-600 rounded relative">
-                  {/* LINE CIRCLE */}
-                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                </div>
-              </div>
-              {/* RIGHT */}
-              <div className="w-1/3 "></div>
-            </div>
-            {/* EXPERIENCE LIST ITEM */}
-            <div className="flex justify-between h-48">
-              {/* LEFT */}
-              <div className="w-1/3 "></div>
-              {/* CENTER */}
-              <div className="w-1/6 flex justify-center">
-                {/* LINE */}
-                <div className="w-1 h-full bg-gray-600 rounded relative">
-                  {/* LINE CIRCLE */}
-                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                </div>
-              </div>
-              {/* RIGHT */}
-              <div className="w-1/3 ">
-                {/* PROJECT TITLE */}
-                <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Real-Time Collaborative Editor{" "}
-                </div>
-                {/* PROJECT DESC */}
-                <div className="p-3 text-sm italic">
-                  Developed a real-time collaborative editor using React and
-                  Socket.io.{" "}
-                </div>
-                {/* PROJECT DATE */}
-                <div className="p-3 text-red-400 text-sm font-semibold">
-                  SEP 2023 – OCT 2023{" "}
-                </div>
-              </div>
             </div>
             {/* EXPERIENCE LIST ITEM */}
             <div className="flex justify-between h-48">
@@ -269,16 +265,18 @@ const AboutPage = () => {
               <div className="w-1/3 ">
                 {/* PROJECT TITLE */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  To-Do List{" "}
+                  Swoley-fit{" "}
                 </div>
                 {/* PROJECT DESC */}
                 <div className="p-3 text-sm italic">
-                  Interactive to-do list application utilizing HTML, CSS, and
-                  JavaScript for efficient task management.{" "}
+                  React-based app with Tailwind CSS, offering a responsive
+                  design. Users can customize workouts based on body focus and
+                  exercise preferences, enhancing engagement with dynamic
+                  suggestions.{" "}
                 </div>
                 {/* PROJECT DATE */}
                 <div className="p-3 text-red-400 text-sm font-semibold">
-                  JAN 2024 - FEB 2024{" "}
+                  Aug 2024 – Sep 2024{" "}
                 </div>
               </div>
               {/* CENTER */}
