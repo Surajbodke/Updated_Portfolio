@@ -70,7 +70,7 @@ const PortfolioPage = () => {
                       priority
                     />
                   </div>
-                  <p className="w-64 sm:w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-64 sm:w-80 md:w-[700px] lg:w-[800px] lg:text-lg xl:w-[1200px]">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
