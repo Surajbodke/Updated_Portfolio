@@ -146,9 +146,7 @@ const Navbar = () => {
                 key={link.title}
                 className="cursor-pointer"
               >
-                <Link href={link.url} onClick={() => setOpen(false)}>
-                  {link.title}
-                </Link>
+                <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
           </motion.div>
