@@ -71,7 +71,7 @@ const Navbar = () => {
         <Link href="https://github.com/Surajbodke">
           <Image
             src="/github.png"
-            alt=""
+            alt="GitHub"
             width={24}
             height={24}
             unoptimized
@@ -81,7 +81,7 @@ const Navbar = () => {
         <Link href="https://leetcode.com/u/surajbodke/">
           <Image
             src="/leetcode.png"
-            alt=""
+            alt="LeetCode"
             width={24}
             height={24}
             unoptimized
@@ -91,7 +91,7 @@ const Navbar = () => {
         <Link href="https://www.instagram.com/_.suraj._.25/">
           <Image
             src="/instagram.png"
-            alt=""
+            alt="Instagram"
             width={24}
             height={24}
             unoptimized
@@ -101,7 +101,7 @@ const Navbar = () => {
         <Link href="https://www.linkedin.com/in/suraj-bodke">
           <Image
             src="/linkedin.png"
-            alt=""
+            alt="LinkedIn"
             width={24}
             height={24}
             unoptimized
@@ -138,15 +138,17 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="z-40 absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl"
+            className="z-[9999] absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl"
           >
             {links.map((link) => (
               <motion.div
                 variants={listItemVariants}
-                className=""
                 key={link.title}
+                className="cursor-pointer"
               >
-                <Link href={link.url}>{link.title}</Link>
+                <Link href={link.url} onClick={() => setOpen(false)}>
+                  {link.title}
+                </Link>
               </motion.div>
             ))}
           </motion.div>
