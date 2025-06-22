@@ -11,7 +11,7 @@ const items = [
     title: "FindYourHome",
     desc: "Feb 2024 – Mar 2024\n• Developed a user-friendly and responsive frontend for a real estate app using React.\n• Integrated Google Maps API to enable location-based property search with real-time updates.\n• Built a real-time chat feature using Socket.io for seamless communication between users and agents.",
     img: "/RealEstate.png",
-    link: "https://www.loom.com/share/bc8dc42e83164022aebd9a6cd0e61651?sid=04a24412-2f60-486a-a8b9-40b6fa87aa84",
+    link: "https://findyourhomee.netlify.app",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const items = [
     title: "Swoley-fit ",
     desc: "Aug 2024 – Sep 2024\n• Built with React and styled using Tailwind CSS, the app ensures a seamless user experience across various devices, adapting smoothly to different screen sizes.\n• Users can select workout preferences like body part focus and exercise solo or with friends for a tailored fitness experience.\n• Provides dynamic exercise suggestions to enhance user engagement and motivation in fitness routines.",
     img: "/SwoleyFit.png",
-    link: "https://github.com/Surajbodke/swoley-fit",
+    link: "https://musclemapp.netlify.app",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const items = [
     title: "Real-Time Collaborative Editor ",
     desc: "May 2024 – Jun 2024\n• Developed a real-time collaborative code editor with React and Socket.io for seamless user interaction.\n• Supports multiple languages including Java, Python, JavaScript, and C++.\n• Enhances productivity with real-time collaboration between users.",
     img: "/CodeEditor.png",
-    link: "https://github.com/Surajbodke/Code_Editor",
+    link: "https://nishant-realtime-editor.netlify.app",
   },
 ];
 
